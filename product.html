@@ -1,19 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>SoilSavvy : Contact</title>
-    <link href="https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@400&f[]=zodiak@700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoilSavvy : Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=plus-jakarta-sans@400&f[]=zodiak@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    @media (max-width: 1023px) {
+      .box-container {
+        flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        gap: 2rem;
+      }
+      .box-container > .box1 {
+        width: 90%;
+      }
+      .plans {
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      .plans > .basic {
+        width: 90%;
+      }
+      div > .bold-text {
+        width: 85%;
+      }
+      div > .subtext {
+        width: 85%;
+      }
+    }
+  </style>
 </head>
 <body class="bg-emerald-50" style="font-family: 'Plus Jakarta Sans', sans-serif;">
 
-<div class="mx-8">
   <header>
     <nav class="z-10 w-full mt-8">
       <div class="container mx-auto px-8 md:px-12 lg:px-6">
@@ -46,56 +73,72 @@
     </nav>
   </header>
 
+<main class="max-w-7xl mx-auto">
+  <div class="heading bg-emerald-400 h-60 rounded-2xl w-[90%] m-auto flex justify-center items-center flex-col text-center mt-10" data-aos="fade-down">
+    <h1 class="text-4xl font-bold text-slate-800">Services</h1>
+    <p class="text-slate-800"><span class="text-white">Home </span>> Services</p>
+  </div>
 
-  <main class="m-10 border-8 border-slate-800 h-10px flex rounded-3xl gap-2 p-5 flex-col md:flex-row max-w-7xl mx-auto px-8 md:px-12 lg:px-6" data-aos="zoom-in">
-    <div class="flex-auto p-2 md:w-2/5"> 
-      <h4 class="text-xl font-bold text-slate-800">Contact Us</h4>
-      <div class="flex mt-8 gap-4 flex-wrap md:flex-col">
-        <div class="flex-auto">
-          <div class="flex gap-2 content-start">
-            <ion-icon name="chatbubble-ellipses-outline" class="mt-1.5"></ion-icon>
-            <div>
-              <h5 class="font-semibold text-lg text-slate-800">Chat with us</h5>
-              <p class="text-slate-800">Have questions about soil health? Let us help.</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex-auto">
-          <div class="flex gap-2">
-            <ion-icon name="compass-outline" class="mt-1.5"></ion-icon>
-            <div>
-              <h5 class="font-semibold text-lg text-slate-800">Visit Us</h5>
-              <p class="text-slate-800">We’re based in rural hubs across India—come see a demo!</p>
-            </div>
-          </div>
-        </div>
-        <div class="flex-auto">
-          <div class="flex gap-2">
-            <ion-icon name="call-outline" class="mt-1.5"></ion-icon>
-            <div>
-              <h5 class="font-semibold text-lg text-slate-800">Call us</h5>
-              <p class="text-slate-800">+91-XXXXXXXXXX — our agri-helpline is here for you.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <div class="heading flex justify-center items-center flex-col mt-20 m-auto w-[90%] text-center" data-aos="fade-up">
+    <p class="text-emerald-400">Our Services</p>
+    <h1 class="bold-text text-4xl font-bold w-[38rem] text-center text-slate-800">
+      Revolutionizing Farming with Affordable Soil Testing
+    </h1>
+  </div>
+
+  <div class="box-container mt-10 w-[90%] m-auto flex justify-center gap-4 items-center">
+    <div class="box1 bg-slate-800 w-1/3 text-left p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="text-white text-2xl mt-2">Affordable Soil Testing Kits</h1>
+      <p class="text-white">We offer soil testing kits priced at just ₹300, making them accessible for all farmers to maximize yields while saving costs.</p>
     </div>
-    <div class="flex-auto md:w-3/5 bg-emerald-400 rounded-3xl py-16 px-8 text-slate-800">
-      <h2 class="text-4xl font-semibold leading-10 max-w-2xl">Reach out to revolutionize your farming journey!</h2>
-      <h6 class="mt-2 mb-8">The SoilSavvy team is ready to guide you with every soil-related need.</h6>
-      <form action="">
-        <input type="text" placeholder="Your Name" class="mb-5 w-full bg-transparent border-b-2 border-slate-800 placeholder:text-slate-800/70 active:outline-none"><br>
-        <input type="email" placeholder="example@email.com" class="mb-5 pb-1 w-full bg-transparent border-b-2 border-slate-800 placeholder:text-slate-800/70"><br>
-        <textarea name="message" id="message" cols="100" rows="3" class="w-full mb-4 bg-transparent border-b-2 border-slate-800 placeholder:text-slate-800/70" placeholder="How can we assist you?"></textarea>
-        <p class="text-slate-800/90 text-base">Query Type</p>
-        <input type="checkbox" class="accent-slate-300 bg-transparent"> Product Support<br>
-        <input type="checkbox" class="accent-slate-300 bg-transparent"> Partnership Inquiry<br>
-        <input type="checkbox" class="accent-slate-300 mb-5 bg-transparent"> Feedback or Others
-        <button class="w-full bg-slate-800 rounded-lg py-2 text-white mt-2 font-semibold">SUBMIT</button>
-      </form>
+    <div class="box1 bg-emerald-400 w-1/3 text-left p-8 rounded-2xl mt-6" data-aos="fade-up" data-aos-delay="200">
+      <h1 class="text-slate-800 text-2xl mt-2">Local Language Manuals</h1>
+      <p class="text-slate-800">Each kit includes easy-to-follow manuals and charts in vernacular languages to ensure farmers understand and apply findings effectively.</p>
     </div>
-  </main>
-</div>
+    <div class="box1 bg-slate-800 w-1/3 text-left p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+      <h1 class="text-white text-2xl mt-2">Smart, Reusable Components</h1>
+      <p class="text-white">Our kits are environmentally friendly, with reusable components designed for long-term, sustainable use.</p>
+    </div>
+  </div>
+
+  <div class="box-container w-[90%] m-auto flex justify-center gap-4 items-center">
+    <div class="box1 bg-slate-200 w-1/3 text-left p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+      <h1 class="text-slate-800 text-2xl mt-2">Technology-Driven Precision</h1>
+      <p class="text-slate-800">Utilizing test strips and proven chemical methods, our kits provide up to 97% accurate results across 1 hectare of land.</p>
+    </div>
+    <div class="box1 bg-slate-100 w-1/3 text-left p-8 rounded-2xl mt-6" data-aos="fade-up" data-aos-delay="200">
+      <h1 class="text-slate-800 text-2xl mt-2">Sustainable Agriculture</h1>
+      <p class="text-slate-800">Reduce chemical use and protect ecosystems. Our kits promote eco-friendly farming by minimizing overfertilization and preventing water pollution.</p>
+    </div>
+    <div class="box1 bg-slate-200 w-1/3 text-left p-8 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+      <h1 class="text-slate-800 text-2xl mt-2">Field Demonstrations</h1>
+      <p class="text-slate-800">We conduct hands-on training and collaborate with local partners to ensure widespread understanding and adoption of soil testing.</p>
+    </div>
+  </div>
+
+  <div class="heading flex justify-center items-center flex-col mt-20 m-auto w-[90%] text-center" data-aos="zoom-in">
+    <p class="text-emerald-400">Kit Pricing</p>
+    <h1 class="bold-text text-4xl font-bold w-[38rem] text-center text-slate-800">
+      Empowering Farmers with ₹300 Soil Kits
+    </h1>
+    <p class="w-[38rem] pt-4 subtext text-slate-800">
+      Our pricing strategy ensures affordability and value. We also aim to work with the government to bring in subsidies and reach more farmers.
+    </p>
+  </div>
+
+  <div class="plans w-[90%] m-auto flex justify-center gap-4 items-center mt-10 leading-7 mb-8">
+    <div class="basic bg-slate-800 w-1/3 text-left p-10 rounded-2xl" data-aos="flip-up">
+      <h2 class="text-white text-xl mb-2">Farmer Starter Kit</h2>
+      <p class="text-white text-xl mb-2"><span class="text-[#34D399] text-5xl align-middle">₹300</span></p>
+      <p class="text-white text-xl mb-2">Perfect for small landowners</p>
+      <p class="text-slate-300 mb-4">Tests for Nitrogen, Phosphorus, Potassium & pH</p>
+      <p class="text-slate-300">Reusable & eco-friendly</p>
+      <p class="text-slate-300">Manuals in local languages</p>
+      <p class="text-slate-300">Covers 1 hectare with 97% accuracy</p>
+      <button class="mt-5 pl-6 pr-6 pt-2 pb-2 rounded-2xl bg-[#34D399]">Buy Kit</button>
+    </div>
+  </div>
+</main>
 
 <footer class="w-full bg-slate-800 py-16 mt-20">
   <section class="bg-slate-800 py-12">
@@ -211,7 +254,7 @@
   </div>
 </footer>
 
-
+<!-- AOS Script -->
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
